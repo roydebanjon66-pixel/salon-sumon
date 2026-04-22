@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Sumon's Barber Shop</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Sumon's Barber Shop Logo"></a>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a><a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a><a href="pricing.html">Pricing</a>
+                <a href="reviews.html">Reviews</a><a href="contact.html" class="active">Contact</a>
+            </nav>
+            <a href="tel:+8801671723561" class="btn btn-yellow nav-book">Book Now</a>
+            <button class="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <div class="mobile-nav">
+        <a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a>
+        <a href="pricing.html">Pricing</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-yellow" style="margin-top:20px;text-align:center;">Book Now</a>
+    </div>
+    <div class="mobile-nav-overlay"></div>
+
+    <section class="page-hero">
+        <h1>BOOK YOUR <span>APPOINTMENT</span></h1>
+        <p>Looking for a new look? We’ve got you covered. &#x25CF; Always Open</p>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Left: Info -->
+                <div>
+                    <!-- Phone Numbers -->
+                    <div class="contact-card reveal">
+                        <h3>Contact Numbers</h3>
+                        <ul class="phone-list">
+                             <li><span>Main Branch</span><strong>01671-723561</strong></li>
+                        </ul>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="contact-card reveal" style="margin-top: 25px;">
+                        <h3>OUR <span>HOUSE</span></h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Main Location</h4>
+                                  <p>Sayeman Beach Resort, Marine Drive Road, Kolatoli, Cox’s Bazar, Bangladesh – 4700</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Availability</h4>
+                                  <p>Visit us at our professional barber shop. &#x25CF; Always Open</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>Chat with us on WhatsApp for booking</h4>
+                                <p><a href="https://www.instagram.com/sumonsbarbershop0" target="_blank"
+                                        style="color: var(--yellow);">Follow us on Instagram</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="contact-card reveal" style="margin-top: 25px;">
+                        <h3>Follow Us</h3>
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 5px;">
+                            <a href="https://www.instagram.com/sumonsbarbershop0" target="_blank" class="btn btn-yellow"
+                                style="gap: 8px;"><i class="fab fa-instagram"></i> Instagram</a>
+                            <a href="mailto:sumonsbarbershop@gmail.com" target="_blank" class="btn btn-outline"
+                                style="gap: 8px;"><i class="fas fa-envelope"></i> Email Us</a>
+                            <a href="tel:+8801671723561" target="_blank" class="btn btn-outline"
+                                style="gap: 8px; margin-top: 10px;"><i class="fas fa-phone"></i> Call Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="contact-card reveal">
+                    <h3>Send a Message</h3>
+                    <p style="color: var(--gray); margin-bottom: 25px; font-size: 0.9rem;">Fill out the form and we'll
+                        get back to you shortly.</p>
+                    <form id="contact-form" class="contact-form">
+                        <input type="text" name="name" placeholder="Your Full Name" required>
+                        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                        <select name="location">
+                            <option value="cox-bazar">Sayeman Beach Resort Branch</option>
+                        </select>
+                        <select name="service">
+                            <option value="" disabled selected>Select Grooming Package</option>
+                            <option value="gentleman-cut">THE GENTLEMAN’S CUT – 399 BDT</option>
+                            <option value="royal-groom">ROYAL GROOM PACKAGE – 650 BDT</option>
+                            <option value="urban-king">THE URBAN KING – 1050 BDT</option>
+                            <option value="signature-look">SIGNATURE LOOK – 1650 BDT</option>
+                            <option value="executive-refresh">EXECUTIVE REFRESH – 2550 BDT</option>
+                            <option value="royal-treatment">ROYAL TREATMENT – 2999 BDT</option>
+                        </select>
+                        <input type="text" name="date" placeholder="Preferred Date & Time">
+                        <textarea name="message" placeholder="Any special request or message..."></textarea>
+                         <button type="submit" class="btn btn-yellow btn-block">Refresh Your Look Today 👑</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Location Grid -->
+            <div class="section-title reveal" style="margin-top: 80px;">
+                <h2>FIND <span>US</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="branch-grid">
+                <div class="branch-card reveal">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Main Branch</h4>
+                    <span>Sayeman Beach Resort, Marine Drive Road, Kolatoli, Cox’s Bazar, Bangladesh – 4700<br><strong>01671-723561</strong></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <p>Sumon's Barber Shop offers professional grooming services in a relaxing and stylish environment at Sayeman Beach Resort, Cox’s Bazar.</p>
+                    <div class="social-row">
+                        <p style="color: var(--gray); font-size: 0.9rem;">Trusted by 364 Followers</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+8801671723561">01671-723561</a></li>
+                        <li><a href="mailto:sumonsbarbershop@gmail.com">sumonsbarbershop@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2026 Sumon's Barber Shop. All Rights Reserved. Professional Grooming Service. &#x25CF; Always Open</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

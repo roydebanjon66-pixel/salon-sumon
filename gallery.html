@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Sumon's Barber Shop</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-hs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 14px;
+        }
+
+        .gallery-hs-item {
+            border-radius: 10px;
+            overflow: hidden;
+            height: 300px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .gallery-hs-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .gallery-hs-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-hs-item .g-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(17, 17, 17, 0.6);
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .gallery-hs-item:hover .g-overlay {
+            opacity: 1;
+        }
+
+        .gallery-hs-item .g-overlay i {
+            color: var(--yellow);
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Sumon's Barber Shop Logo"></a>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a><a href="services.html">Services</a>
+                <a href="gallery.html" class="active">Gallery</a><a href="pricing.html">Pricing</a>
+                <a href="reviews.html">Reviews</a><a href="contact.html">Contact</a>
+            </nav>
+            <a href="tel:+8801671723561" class="btn btn-yellow nav-book">Book Now</a>
+            <button class="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <div class="mobile-nav">
+        <a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a>
+        <a href="pricing.html">Pricing</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-yellow" style="margin-top:20px;text-align:center;">Book Now</a>
+    </div>
+    <div class="mobile-nav-overlay"></div>
+
+    <section class="page-hero">
+        <h1>STYLE <span>GALLERY</span></h1>
+        <p>Our professional work on display. The Sumon's Barber Shop standard.</p>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>STYLE <span>SHOWCASE</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="gallery-hs-grid">
+                <div class="gallery-hs-item reveal reveal-delay-1"><img
+                        src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&auto=format&fit=crop"
+                        alt="Style">
+                    <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-hs-item reveal reveal-delay-2"><img
+                        src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&auto=format&fit=crop"
+                        alt="Style">
+                    <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-hs-item reveal reveal-delay-3"><img
+                        src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600&auto=format&fit=crop"
+                        alt="Style">
+                    <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-hs-item reveal"><img
+                        src="https://images.unsplash.com/photo-1592647420148-bfcc1a3ed291?w=600&auto=format&fit=crop"
+                        alt="Style">
+                    <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-hs-item reveal reveal-delay-1"><img
+                        src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&auto=format&fit=crop"
+                        alt="Style">
+                    <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-hs-item reveal reveal-delay-2"><img
+                        src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&auto=format&fit=crop"
+                        alt="Style">
+                    <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-hs-item reveal reveal-delay-3"><img
+                        src="https://images.unsplash.com/photo-1532710093739-9470acff878f?w=600&auto=format&fit=crop"
+                        alt="Style">
+                    <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-hs-item reveal"><img
+                        src="https://images.unsplash.com/photo-1622286332616-f71bd52eb858?w=600&auto=format&fit=crop"
+                        alt="Style">
+                    <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-hs-item reveal reveal-delay-1"><img
+                        src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&auto=format&fit=crop"
+                        alt="Style">
+                    <div class="g-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+            <div class="text-center gap reveal">
+                <a href="tel:+8801671723561" target="_blank" class="btn btn-yellow"><i
+                        class="fas fa-phone"></i>&nbsp; Call us for Booking</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <p>Sumon's Barber Shop offers professional grooming services in a relaxing and stylish environment at Sayeman Beach Resort, Cox’s Bazar.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+8801671723561">01671-723561</a></li>
+                        <li><a href="mailto:sumonsbarbershop@gmail.com">sumonsbarbershop@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2026 Sumon's Barber Shop. All Rights Reserved. Professional Grooming Service. &#x25CF; Always Open</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
